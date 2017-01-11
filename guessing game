@@ -1,0 +1,52 @@
+#game that makes user guess a number and has the cpu tell if it is right or wrong and also how far away the number is from the correct number.
+
+print ("hello welcome to the number guesser!")
+
+print ("Instructions:  the computer will generate a random number and you will have ot guess what that number is.")
+
+x = (input ("are you ready to play?(Y/N)"))
+
+while x == 'Y'	or 'y':		
+	import random 
+	from random import randint 
+	r = (randint(0,6))
+	print ( r )
+
+	g = int (input("guess the number"))	
+	if g == r:
+		print ("good Job! you guessed correctly")
+		break
+		count = 0 
+	while g != r:
+		count = 0
+		count +=1
+		g = int (input ("guess again"))
+		if g < r:
+			print ("a little higher")
+		if g > r:
+			print ("a little less")
+		if g == r -3:
+			print ("add three")
+		if g == r -1:
+			print ("add one")
+		if g == r +1:
+			print ("minus one")
+		if g == r:
+			print ("good job!")
+print ("it took you " , count , "trys to guess the number!")
+pass
+
+#work on later
+if  x == 'N' or 'n':
+	q = input ("do you want to quit (Y/N)")
+	if q == 'Y' or 'y':
+		print ("bye!")
+		
+	if q == 'N' or 'n':
+		i = input ("do you need instructions again? (Y/N)")
+		if i == 'Y' or 'y':
+			print ("the computer will generate a random number and you will have ot guess what that number is.")
+		if i == 'N' or 'n':
+			
+
+
