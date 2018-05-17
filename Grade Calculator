@@ -1,0 +1,200 @@
+print ("""                hello welcome to the grade calculator 
+      
+      
+        
+	                     by underd0g
+      
+      
+        """)
+      
+      
+        choices = input ("""\
+      
+      
+        	-A            calculate a single grade (letter/percent) 
+      
+      
+        
+      
+      
+        	-B            DONT CHOOSE THIS
+      
+      
+        
+      
+      
+        	-C            calculate average of all your grades
+      
+      
+        	Responce: """)
+      
+      
+        if choices == 'A':
+      
+      
+        	grade = []
+      
+      
+        	maxLengthList = 10
+      
+      
+        	while len(grade) < maxLengthList :
+      
+      
+        		x = int (input("input points earned here"))
+      
+      
+        		y = int (input("input total assignment points here"))
+      
+      
+        		percent = x/y*100
+      
+      
+        		grade.append(percent)
+      
+      
+        		v = input('do you have another grade to enter?')
+      
+      
+        		if v == 'n':
+      
+      
+        			print (grade , '%')
+      
+      
+        			break 
+      
+      
+        		else:
+      
+      
+        			print (grade)
+      
+      
+        #Choice B-------------------------------------------------------
+      
+      
+        if choices == 'B':
+      
+      
+        	b=1 
+      
+      
+        	while b == 1:
+      
+      
+        		print ('told ya!')
+      
+      
+        else:
+      
+      
+        	
+      
+      
+        #Choice C-------------------------------------------------------
+      
+      
+        	if choices == 'C':
+      
+      
+        		grade = []
+      
+      
+        		maxLengthList = 50
+      
+      
+        		while len(grade) < maxLengthList :
+      
+      
+        			x = int (input("input points earned here"))
+      
+      
+        			earned = x 
+      
+      
+        			grade.append(earned)
+      
+      
+        			print (grade)
+      
+      
+        			v = input('do you have anymore earned grades to input? :')
+      
+      
+        			if v == 'n':
+      
+      
+        				total = []
+      
+      
+        				maxLengthList = 50 
+      
+      
+        				while len(grade)< maxLengthList :
+      
+      
+        					y = int (input ('insert total points of assignment here'))
+      
+      
+        					points =  y
+      
+      
+        					total.append(points)
+      
+      
+        					print (total)
+      
+      
+        					n = input ('did you input all the total points?')
+      
+      
+        					m = sum(grade) / sum(total) *100 
+      
+      
+        					if n == 'y':
+      
+      
+        						print ('your average grade is' , m ,'%')
+      
+      
+        					if m > 90.0:
+      
+      
+        						print ('A')
+      
+      
+        					if m > 80.0 and m < 89.9:
+      
+      
+        						print ('B')
+      
+      
+        					if m > 70.0 and m < 79.9:
+      
+      
+        						print ('C')
+      
+      
+        					if m > 60.0 and m < 69.9:
+      
+      
+        						print ('D')
+      
+      
+        					if m < 59.9:
+      
+      
+        						print ('F')
+      
+      
+        					break
+      
+      
+        			else:
+      
+      
+        				print (grade)
+      
+      
+        
