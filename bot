@@ -79,6 +79,7 @@ class InstagramBot:
                 time.sleep(2)
             unique_photos -= 1
 
+#enter your account's username and password here so that the bot can login 
 
 username = "USERNAME"
 password = "PASSWORD"
