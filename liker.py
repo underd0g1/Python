@@ -38,8 +38,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 #    else:
 #        x = input('r for try again --- q for Quit')
 #        if x == 'r' or x == 'R':
-uname = 'hide4@comcast.net'
-pword = 'Gutentag5!'
+uname = 
+pword = 
 browser = webdriver.Firefox()
 browser.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
 #insta blocks you if you go to quickly
